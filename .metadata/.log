@@ -1,0 +1,692 @@
+!SESSION 2017-11-14 21:55:47.053 -----------------------------------------------
+eclipse.buildId=3.9.1.201710111105-RELEASE-e47
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/dipeshrijal/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/dipeshrijal/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-11-14 21:56:19.544
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-11-14 21:56:22.082
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-11-14 21:56:22.082
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@582ce314,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@57508fcf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2017-11-14 21:56:23.177
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-11-14 21:56:23.177
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2017-11-14 21:56:23.177
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 21:56:24.296
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 21:56:24.296
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 21:57:10.061
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 21:57:10.074
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 21:57:23.081
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 21:57:23.087
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.hasModelProvider(ModelProviderManager.java:292)
+	at org.eclipse.jst.jsf.common.internal.componentcore.AbstractCompCoreQueryFactory$DefaultCompCoreQueryFactory.createJEEModelProviderQuery(AbstractCompCoreQueryFactory.java:38)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.createContextParamSpecific(FaceletTagIndex.java:212)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.create(FaceletTagIndex.java:177)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:91)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:1)
+	at org.eclipse.jst.jsf.common.internal.resource.ResourceSingletonObjectManager.getInstance(ResourceSingletonObjectManager.java:90)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.initialize(FaceletTagRegistry.java:170)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getAllTagLibraries(FaceletTagRegistry.java:129)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getTagLibrary(FaceletTagRegistry.java:230)
+	at org.eclipse.jst.jsf.facelet.core.internal.metadata.FaceletNamespaceMetaDataLocator.locateMetaDataModelProviders(FaceletNamespaceMetaDataLocator.java:53)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.locateMetaDataSourceInstances(DomainLoadingStrategy.java:143)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.load(DomainLoadingStrategy.java:55)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModel.load(MetaDataModel.java:93)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.loadMetadata(MetaDataModelManager.java:150)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.getModel(MetaDataModelManager.java:93)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getMDModel(MetaDataQueryHelper.java:124)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getModel(MetaDataQueryHelper.java:59)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntities(MetaDataQueryHelper.java:69)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntity(MetaDataQueryHelper.java:64)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:102)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:176)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateNonELAttributeValue(AttributeValidatingStrategy.java:695)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$1(AttributeValidatingStrategy.java:672)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:168)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:144)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:99)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:177)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:134)
+	at org.eclipse.jst.jsf.ui.internal.validation.JSFValidator.validateFile(JSFValidator.java:173)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:249)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 21:57:23.093
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 21:57:23.093
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.hasModelProvider(ModelProviderManager.java:292)
+	at org.eclipse.jst.jsf.common.internal.componentcore.AbstractCompCoreQueryFactory$DefaultCompCoreQueryFactory.createJEEModelProviderQuery(AbstractCompCoreQueryFactory.java:38)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.createContextParamSpecific(FaceletTagIndex.java:212)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.create(FaceletTagIndex.java:177)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:91)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:1)
+	at org.eclipse.jst.jsf.common.internal.resource.ResourceSingletonObjectManager.getInstance(ResourceSingletonObjectManager.java:90)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.initialize(FaceletTagRegistry.java:170)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getAllTagLibraries(FaceletTagRegistry.java:129)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getTagLibrary(FaceletTagRegistry.java:230)
+	at org.eclipse.jst.jsf.facelet.core.internal.metadata.FaceletNamespaceMetaDataLocator.locateMetaDataModelProviders(FaceletNamespaceMetaDataLocator.java:53)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.locateMetaDataSourceInstances(DomainLoadingStrategy.java:143)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.load(DomainLoadingStrategy.java:55)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModel.load(MetaDataModel.java:93)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.loadMetadata(MetaDataModelManager.java:150)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.getModel(MetaDataModelManager.java:93)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getMDModel(MetaDataQueryHelper.java:124)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getModel(MetaDataQueryHelper.java:59)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntities(MetaDataQueryHelper.java:69)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntity(MetaDataQueryHelper.java:64)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:102)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:176)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateNonELAttributeValue(AttributeValidatingStrategy.java:695)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$1(AttributeValidatingStrategy.java:672)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:168)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:144)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:99)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:177)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:134)
+	at org.eclipse.jst.jsf.ui.internal.validation.JSFValidator.validateFile(JSFValidator.java:173)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:249)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 21:59:36.501
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 21:59:36.555
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 21:59:37.826
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 21:59:39.344
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:00:22.872
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:00:22.906
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:00:25.309
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:00:25.591
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:00:26.898
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:01:56.915
+!MESSAGE Non IFiles not supported yet
+!SESSION 2017-11-14 22:02:41.599 -----------------------------------------------
+eclipse.buildId=3.9.1.201710111105-RELEASE-e47
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide -keyring /Users/dipeshrijal/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -data file:/Users/dipeshrijal/eclipse-sts/EA/ -product org.springsource.sts.ide -keyring /Users/dipeshrijal/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-11-14 22:02:45.703
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2017-11-14 22:02:47.972
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-11-14 22:02:47.972
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b826482,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f908a10,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:03:46.521
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:03:46.594
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:03:46.595
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:03:46.606
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:03:46.634
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:03:46.640
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 22:03:57.175
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.ear does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 22:03:57.189
+!MESSAGE Version 8.0 of project facet jst.ear does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.ear does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.hasModelProvider(ModelProviderManager.java:292)
+	at org.eclipse.jst.jsf.common.internal.componentcore.AbstractCompCoreQueryFactory$DefaultCompCoreQueryFactory.createJEEModelProviderQuery(AbstractCompCoreQueryFactory.java:38)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.createContextParamSpecific(FaceletTagIndex.java:212)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.create(FaceletTagIndex.java:177)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:91)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:1)
+	at org.eclipse.jst.jsf.common.internal.resource.ResourceSingletonObjectManager.getInstance(ResourceSingletonObjectManager.java:90)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.initialize(FaceletTagRegistry.java:170)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getAllTagLibraries(FaceletTagRegistry.java:129)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getTagLibrary(FaceletTagRegistry.java:230)
+	at org.eclipse.jst.jsf.facelet.core.internal.metadata.FaceletNamespaceMetaDataLocator.locateMetaDataModelProviders(FaceletNamespaceMetaDataLocator.java:53)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.locateMetaDataSourceInstances(DomainLoadingStrategy.java:143)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.load(DomainLoadingStrategy.java:55)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModel.load(MetaDataModel.java:93)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.loadMetadata(MetaDataModelManager.java:150)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.getModel(MetaDataModelManager.java:93)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getMDModel(MetaDataQueryHelper.java:124)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getModel(MetaDataQueryHelper.java:59)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntities(MetaDataQueryHelper.java:69)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntity(MetaDataQueryHelper.java:64)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:102)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:176)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateNonELAttributeValue(AttributeValidatingStrategy.java:695)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$1(AttributeValidatingStrategy.java:672)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:168)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:144)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:99)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:177)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:134)
+	at org.eclipse.jst.jsf.ui.internal.validation.JSFValidator.validateFile(JSFValidator.java:173)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:249)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 22:03:57.201
+!MESSAGE Plugin org.eclipse.jst.jee, extension org.eclipse.jst.j2ee.J2EEModelProvider
+Version 8.0 of project facet jst.appclient does not exist.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2017-11-14 22:03:57.201
+!MESSAGE Version 8.0 of project facet jst.appclient does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 8.0 of project facet jst.appclient does not exist.
+	at org.eclipse.wst.common.project.facet.core.util.internal.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.readElement(J2EEModelProviderRegistry.java:85)
+	at org.eclipse.wst.common.core.util.RegistryReader.internalReadElement(RegistryReader.java:81)
+	at org.eclipse.wst.common.core.util.RegistryReader.readRegistry(RegistryReader.java:122)
+	at org.eclipse.jst.j2ee.model.J2EEModelProviderRegistry.getInstance(J2EEModelProviderRegistry.java:43)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.initProviders(ModelProviderManager.java:262)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProviders(ModelProviderManager.java:338)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.getProvider(ModelProviderManager.java:223)
+	at org.eclipse.jst.j2ee.model.ModelProviderManager.hasModelProvider(ModelProviderManager.java:292)
+	at org.eclipse.jst.jsf.common.internal.componentcore.AbstractCompCoreQueryFactory$DefaultCompCoreQueryFactory.createJEEModelProviderQuery(AbstractCompCoreQueryFactory.java:38)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.createContextParamSpecific(FaceletTagIndex.java:212)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex$DefaultProjectTaglibDescriptorFactory.create(FaceletTagIndex.java:177)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:91)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.taglib.FaceletTagIndex.createNewInstance(FaceletTagIndex.java:1)
+	at org.eclipse.jst.jsf.common.internal.resource.ResourceSingletonObjectManager.getInstance(ResourceSingletonObjectManager.java:90)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.initialize(FaceletTagRegistry.java:170)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getAllTagLibraries(FaceletTagRegistry.java:129)
+	at org.eclipse.jst.jsf.facelet.core.internal.registry.FaceletTagRegistry.getTagLibrary(FaceletTagRegistry.java:230)
+	at org.eclipse.jst.jsf.facelet.core.internal.metadata.FaceletNamespaceMetaDataLocator.locateMetaDataModelProviders(FaceletNamespaceMetaDataLocator.java:53)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.locateMetaDataSourceInstances(DomainLoadingStrategy.java:143)
+	at org.eclipse.jst.jsf.common.metadata.internal.DomainLoadingStrategy.load(DomainLoadingStrategy.java:55)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModel.load(MetaDataModel.java:93)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.loadMetadata(MetaDataModelManager.java:150)
+	at org.eclipse.jst.jsf.common.metadata.internal.MetaDataModelManager.getModel(MetaDataModelManager.java:93)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getMDModel(MetaDataQueryHelper.java:124)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getModel(MetaDataQueryHelper.java:59)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntities(MetaDataQueryHelper.java:69)
+	at org.eclipse.jst.jsf.common.metadata.query.internal.MetaDataQueryHelper.getEntity(MetaDataQueryHelper.java:64)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:102)
+	at org.eclipse.jst.jsf.metadataprocessors.MetaDataEnabledProcessingFactory.getAttributeValueRuntimeTypeFeatureProcessors(MetaDataEnabledProcessingFactory.java:176)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateNonELAttributeValue(AttributeValidatingStrategy.java:695)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$1(AttributeValidatingStrategy.java:672)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:168)
+	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:144)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:99)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:177)
+	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:134)
+	at org.eclipse.jst.jsf.ui.internal.validation.JSFValidator.validateFile(JSFValidator.java:173)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPValidator.validate(JSPValidator.java:249)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:810)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:299)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.fullBuild(ValBuilderJob.java:219)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:178)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:03:58.541
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:08:06.638
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:08:06.639
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:08:06.665
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:08:06.666
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:11:01.843
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:11:01.844
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:11:01.862
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:11:01.863
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2017-11-14 22:23:26.167
+!MESSAGE Error occured processing '/exercise22_1/src/main/webapp/WEB-INF/spring/springconfig.xml'
+!STACK 0
+org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2017-11-14 22:24:04.041
+!MESSAGE Error occured processing '/exercise22_1/src/main/webapp/WEB-INF/spring/springconfig.xml'
+!STACK 0
+org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2017-11-14 22:24:32.989
+!MESSAGE Error occured processing '/exercise22_1/src/main/webapp/WEB-INF/spring/springconfig.xml'
+!STACK 0
+org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:24:33.112
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:24:43.232
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:24:52.284
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:27:18.852
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-11-14 22:27:18.852
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:36:27.141
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2017-11-14 22:36:42.962
+!MESSAGE Error occured processing '/exercise22_1/src/main/webapp/WEB-INF/spring/rootconfig.xml'
+!STACK 0
+org.xml.sax.SAXParseException; Premature end of file.
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:36:43.107
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:54:34.857
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:54:34.864
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:54:36.848
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 22:54:49.637
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:29:37.968
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:29:37.970
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:29:39.202
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2017-11-14 23:44:08.979
+!MESSAGE Server command failed
+!STACK 0
+javax.management.RuntimeOperationsException: Exception invoking method stopApplication
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:308)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1408)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:283)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:260)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:161)
+	at com.sun.jmx.remote.internal.PRef.invoke(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl_Stub.invoke(Unknown Source)
+	at javax.management.remote.rmi.RMIConnector$RemoteMBeanServerConnection.invoke(RMIConnector.java:1020)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.StopModuleCommand.doOperation(StopModuleCommand.java:38)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.AbstractJmxServerCommand$1.run(AbstractJmxServerCommand.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.lang.RuntimeException: Application /exercise20.1 is not running.
+	at com.springsource.tcserver.serviceability.deploy.TcContainerDeployer.stopApplication(TcContainerDeployer.java:362)
+	at com.springsource.tcserver.serviceability.deploy.TcContainerDeployer.stopApplication(TcContainerDeployer.java:348)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1408)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-11-14 23:44:08.984
+!MESSAGE Server command failed
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:53:28.922
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:53:28.949
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:53:42.404
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:53:42.405
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:53:56.863
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:53:56.867
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:54:09.174
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:54:09.175
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:54:34.023
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-11-14 23:54:34.024
+!MESSAGE Non IFiles not supported yet

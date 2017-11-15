@@ -1,0 +1,11 @@
+INDEX VERSION 1.4+/Users/dipeshrijal/eclipse-sts/EA/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1087788175.index
+2270849866.index
+200228290.index
+141289900.index
+590034298.index
+2258108797.index
+1599133575.index
+4046997014.index
+11207633.index
+4141599114.index

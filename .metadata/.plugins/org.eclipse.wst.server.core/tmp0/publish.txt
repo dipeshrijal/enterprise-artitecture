@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Nov 14 23:46:03 CST 2017
+org.eclipse.jst.jee.server\:/binary\:/Users/dipeshrijal/.m2/repository/org/springframework/spring-web/4.0.2.RELEASE/spring-web-4.0.2.RELEASE.jar=/Applications/pivotal-tc-server-developer-3.2.8.RELEASE/base-instance/wtpwebapps/exercise20_1/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar
+org.eclipse.jst.jee.server\:exercise20_1=/Applications/pivotal-tc-server-developer-3.2.8.RELEASE/base-instance/wtpwebapps/exercise20_1
